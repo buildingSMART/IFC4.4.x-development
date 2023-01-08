@@ -50,7 +50,7 @@ from extract_concepts_from_xmi import parse_bindings
 
 app = Flask(__name__)
 
-base = "/IFC/RELEASE/IFC4x3/HTML"
+base = "/IFC/RELEASE/IFC4x4/HTML"
 is_iso = os.environ.get('ISO', '0') == '1'
 
 def make_url(fragment=None):
@@ -937,7 +937,7 @@ def process_markdown(resource, mdc):
             mark.string = keyword
             
             if "deprecation" in css_class:
-                anchor = soup.new_tag("a", href="/IFC/RELEASE/IFC4x3/HTML/content/terms_and_definitions.htm#3.1.30-deprecation")
+                anchor = soup.new_tag("a", href="/IFC/RELEASE/IFC4x4/HTML/content/terms_and_definitions.htm#3.1.30-deprecation")
                 icon = soup.new_tag("i")
                 icon["data-feather"] = "link"
                 anchor.append(icon)
@@ -1825,7 +1825,7 @@ def content(s):
     content = open(fn).read()
     
     if X.is_iso:
-        content = re.sub(r'IFC( (4\.3\.[0x](\.\d)?)|\b)', 'ISO 16739-1', content)
+        content = re.sub(r'IFC( (4\.4\.[0x](\.\d)?)|\b)', 'ISO 16739-1', content)
         
     if content.startswith('!template'):
         from jinja2 import Environment, BaseLoader
@@ -2143,8 +2143,8 @@ def sandcastle():
 # N: It may be in an <img alt="IfcClass tag or a" src="IfcSite-url.png">
 # N: It may already be in a <a href="IfcSite">IfcSite</a>
 # N: Or reference an IfcSite.png arbitrarily.
-# N: It may be in the <title>IfcSite - IFC4.3.x Documentation</title>
-ifcre = re.compile(r"(?<!(=\"))(?<!(figures/))(Ifc|IFC|Pset_|Qto_|PEnum_)\w+(?!(\">|.ht|.png|.jp|.gif|\s*</a|\s*</h|.md| - IFC4.3))")
+# N: It may be in the <title>IfcSite - IFC4.4.x Documentation</title>
+ifcre = re.compile(r"(?<!(=\"))(?<!(figures/))(Ifc|IFC|Pset_|Qto_|PEnum_)\w+(?!(\">|.ht|.png|.jp|.gif|\s*</a|\s*</h|.md| - IFC4.4))")
 
 try:
     import os

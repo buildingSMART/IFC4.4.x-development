@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ base }}/assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>IFC4.3.1.0 Documentation</title>
+    <title>IFC4.4.0.0 Documentation</title>
     <link rel="icon" type="image/x-icon" href="{{ base }}/assets/img/favicon.ico">
 </head>
 <body class="{{body_class or ''}}">
@@ -15,7 +15,7 @@
                     <p style='float: right; text-align: right'>International Organization for Standardization</p>
                     <p>ISO 16739-1:2023(E)</p>
                 {% else %}
-                    <p>IFC 4.3.1.0 (IFC4X3_ADD1)
+                    <p>IFC 4.4.0.0 (IFC4X4)
                         <small>development</small>
                     </p>
                 {% endif %}
@@ -23,7 +23,7 @@
                 {% if not is_iso %}
                 <ul>
                     <li>
-                        <a href="https://github.com/buildingSMART/IFC4.3.x-development/issues/">
+                        <a href="https://github.com/buildingSMART/IFC4.4.x-development/issues/">
                             <i data-feather="message-circle"></i>
                             Help suggest improvements
                         </a>
@@ -88,7 +88,7 @@
                 {% if path %}
                 <div class="card fluid shadowed">
                     <p>
-                        <a class="button primary edit-github" href='https://github.com/{{ repo or 'buildingSMART/IFC4.3.x-development' }}/blob/master/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
+                        <a class="button primary edit-github" href='https://github.com/{{ repo or 'buildingSMART/IFC4.4.x-development' }}/blob/master/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
                     </p>
                     <p>
                         <small>
@@ -98,7 +98,7 @@
                     </p>
                     <p>
                         <small>
-                            Is this page difficult to understand? <a href="https://github.com/buildingSMART/IFC4.3.x-development/issues/371">Let us know!</a>
+                            Is this page difficult to understand? <a href="https://github.com/buildingSMART/IFC4.4.x-development/issues/371">Let us know!</a>
                         </small>
                     </p>
                 </div>
@@ -164,7 +164,7 @@
         window.appconfig = {
             'path': '{{ path }}',
             'base': '{{ base }}',
-            'repo': '{{ repo or "buildingSMART/IFC4.3.x-development" }}',
+            'repo': '{{ repo or "buildingSMART/IFC4.4.x-development" }}',
         };
     </script>
     <script src="https://unpkg.com/feather-icons"></script>

@@ -1,12 +1,12 @@
-# IFC 4.3.x
+# IFC 4.4.x
 
 ## Content
 
-This is the **latest** available documentation for IFC 4.3.x specification. 
-It is automatically generated from the latest published [XMI](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/schemas) (with the IFC schema) and [Markdown content](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/docs) (with the definitions and documentations).
+This is the **latest** available documentation for IFC 4.4.x specification. 
+It is automatically generated from the latest published [XMI](https://github.com/buildingSMART/IFC4.4.x-development/tree/master/schemas) (with the IFC schema) and [Markdown content](https://github.com/buildingSMART/IFC4.4.x-development/tree/master/docs) (with the definitions and documentations).
 This is **not** a formal release. Formal releases are available on [standards.buildingsmart.org](https://standards.buildingsmart.org/IFC/).
 
-<img src="https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/master/docs/assets/img/Dongping.jpg" width="800">
+<img src="https://raw.githubusercontent.com/buildingSMART/IFC4.4.x-development/master/docs/assets/img/Dongping.jpg" width="800">
 
 ## Copyright
 

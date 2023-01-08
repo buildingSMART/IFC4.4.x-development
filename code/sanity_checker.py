@@ -12,7 +12,7 @@ if not os.environ.get("USER_AUTH"):
     exit(0)
 
 g = Github(os.environ["USER_AUTH"])
-r = g.get_repo("buildingSMART/IFC4.3.x-output")
+r = g.get_repo("buildingSMART/IFC4.4.x-output")
 
 def alnum(s):
     return "".join(c for c in s if c.isalnum())

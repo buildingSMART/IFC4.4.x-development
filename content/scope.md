@@ -6,12 +6,12 @@ The coverage of infrastructure facilities now incorporated into IFC includes bri
 The Industry Foundation Classes specify a data schema and an exchange file format structure.
 The schema, property sets and usage constraints are internally authored as a UML Class diagram
 {%- if not is_iso -%}
-[available as XMI file](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/schemas)
+[available as XMI file](https://github.com/buildingSMART/IFC4.4.x-development/tree/master/schemas)
 {%- endif %}
 {% if is_iso -%}
 and published as the following computer interpretable schemas:
 {%- else -%}
-and published [computer interpretable schemas](https://github.com/buildingSMART/IFC4.3.x-output), including:
+and published [computer interpretable schemas](https://github.com/buildingSMART/IFC4.4.x-output), including:
 {%- endif %}
 
 * In [EXPRESS data specification language](../annex-a-express.html), according to ISO 10303-11,
@@ -19,7 +19,7 @@ and published [computer interpretable schemas](https://github.com/buildingSMART/
 {%- if not is_iso -%}
 * As RDF/OWL Schema (under development),
 * As JavaScript Object Notation Schema (under development),
-* As a JSON structured [taxonomy](https://github.com/buildingSMART/IFC4.3.x-output/blob/master/IFC.json) of entities, predefined types and properties.
+* As a JSON structured [taxonomy](https://github.com/buildingSMART/IFC4.4.x-output/blob/master/IFC.json) of entities, predefined types and properties.
 {%- endif %}
 
 The exchange file formats for exchanging and sharing data according to the conceptual schema are:

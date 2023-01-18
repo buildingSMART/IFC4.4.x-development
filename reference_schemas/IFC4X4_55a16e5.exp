@@ -4682,7 +4682,7 @@ ENTITY IfcBridge
  SUBTYPE OF (IfcFacility);
 	PredefinedType : IfcBridgeTypeEnum;
  WHERE
-	HasObjectType : (PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
+	HasObjectType : (PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED) OR 
 
 EXISTS(SELF\IfcObject.ObjectType);
 END_ENTITY;
@@ -4691,7 +4691,7 @@ ENTITY IfcBridgePart
  SUBTYPE OF (IfcFacilityPart);
 	PredefinedType : IfcBridgePartTypeEnum;
  WHERE
-	HasObjectType : (PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
+	HasObjectType : (PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED) OR 
 
 EXISTS(SELF\IfcObject.ObjectType);
 END_ENTITY;
@@ -6974,7 +6974,7 @@ ENTITY IfcFacilityPartCommon
  SUBTYPE OF (IfcFacilityPart);
 	PredefinedType : IfcFacilityPartCommonTypeEnum;
  WHERE
-	HasObjectType : (PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
+	HasObjectType : (PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED) OR 
 
 EXISTS(SELF\IfcObject.ObjectType);
 END_ENTITY;
@@ -10528,14 +10528,6 @@ ENTITY IfcRigidOperation
 	FirstCoordinate : IfcMeasureValue;
 	SecondCoordinate : IfcMeasureValue;
 	Height : OPTIONAL IfcLengthMeasure;
- WHERE
-	CoordinateType : ('IFC4X4.IFCLENGTHMEASURE' IN TYPEOF(FirstCoordinate)
-OR
-'IFC4X4.IFCPLANEANGLEMEASURE' IN TYPEOF(FirstCoordinate))
-AND
-('IFC4X4.IFCLENGTHMEASURE' IN TYPEOF(SecondCoordinate)
-OR
-'IFC4X4.IFCPLANEANGLEMEASURE' IN TYPEOF(SecondCoordinate));
 END_ENTITY;
 
 ENTITY IfcRoad

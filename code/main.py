@@ -39,7 +39,7 @@ for ffn in glob.glob(relative_path("..", "schemas", "*.xml")):
         ])
         if script == "to_express":
         
-            for reference in ["IFC4x3_RC4.exp", "IFC4x3_RC4_43c3555.exp"]:
+            for reference in ["IFC4X4_55a16e5.exp"]:
         
                 subprocess.check_call([
                     sys.executable, 

@@ -3,7 +3,6 @@ IFC4.4.x
 
 Repository to collect updates to the IFC4.4 Specification. 
 Every update will automatically be published here:
-- http://ifc43-docs.standards.buildingsmart.org/ (html)
 - https://github.com/buildingsmart/ifc4.4.x-output (exp + pot + etc.)
 - formal releases can be found here https://github.com/buildingsmart/ifc4.4-html
 

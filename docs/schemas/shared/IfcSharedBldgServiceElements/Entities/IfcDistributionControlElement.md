@@ -12,10 +12,10 @@ Since _IfcDistributionControlElement_ and its subtypes typically relate to many 
 
 The key distinction between _IfcDistributionFlowElement_ and _IfcDistributionControlElement_ is whether it is internal or external to the flow system, respectively. For example, the distinction between _IfcFlowMeter_ (subtype of _IfcDistributionFlowElement_ measuring a flow quantity) and _IfcFlowInstrument_ (subtype of _IfcDistributionControlElement_ measuring a flow quality), is based on this principal. A physical device that connects within the flow system in which it measures (having inlet/outlet pipes for the measured substance) follows the _IfcDistributionFlowElement_ hierarchy (and therefore _IfcFlowMeter_ which measures the flow internally). Otherwise, if it monitors/controls but does not connect inline within the flow system (it is external or is a component of another device), then it follows the _IfcDistributionControlElement_ hierarchy (and therefore _IfcFlowInstrument_ which may display various attributes through connected sensors).
 
-> HISTORY  New entity in IFC2.0.
+> HISTORY New entity in IFC2.0.
 
 { .change-ifc2x4}
-> IFC4 CHANGE  Attribute _ControlElementId_ attribute deleted; replaced by classification usage. Ports are now primarily defined using _IfcRelNests_ to enable definition of ports at type definitions (both forward and backward compatible), provide a logical order, and reduce the number of relationship objects needed. The relationship _IfcRelConnectsPortToElement_ is still supported, however is now specific to dynamically connected ports.
+> IFC4 CHANGE Attribute _ControlElementId_ attribute deleted; replaced by classification usage. Ports are now primarily defined using _IfcRelNests_ to enable definition of ports at type definitions (both forward and backward compatible), provide a logical order, and reduce the number of relationship objects needed. The relationship _IfcRelConnectsPortToElement_ is still supported, however is now specific to dynamically connected ports.
 
 ## Attributes
 
@@ -63,13 +63,13 @@ The **IfcDistributionControlElement** may be assigned to the following entities 
 
 #### IfcTask
 
-Indicates tasks used to purchase, install, renovate, demolish, operate, or otherwise act upon the element.  If the element has a type, available task types are assigned to the element type.
+Indicates tasks used to purchase, install, renovate, demolish, operate, or otherwise act upon the element. If the element has a type, available task types are assigned to the element type.
 
 #### IfcProcedure
 
-Indicates procedures used to operate the element.  If the element has a type, available procedure types are assigned to the element type.
+Indicates procedures used to operate the element. If the element has a type, available procedure types are assigned to the element type.
 
 #### IfcEvent
 
-Indicates events to be handled by the element, sequenced by procedures to be followed.  If the element has a type, available event types are assigned to the element type.
+Indicates events to be handled by the element, sequenced by procedures to be followed. If the element has a type, available event types are assigned to the element type.
 

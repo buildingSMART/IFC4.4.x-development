@@ -8,7 +8,7 @@ Figure 1 shows how to use _IfcIndexedPolygonalTextureMap_ to provide the texture
 
 ![Instantiation diagram showing the use of _IfcIndexedPolygonalTextureMap_](../../../../figures/ifcindexedpolygonaltexturemap_01.png "Figure 1 &mdash; Use of _IfcIndexedPolygonalTextureMap_")
 
-> HISTORY  New entity in IFC4.3.0.0
+> HISTORY New entity in IFC4.3.0.0
 
 ## Attributes
 

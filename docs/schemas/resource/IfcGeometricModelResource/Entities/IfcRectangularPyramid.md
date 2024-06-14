@@ -10,7 +10,7 @@ As shown in Figure 1, the pyramid is positioned within its own placement coordin
 
 ![pyramid](../../../../figures/ifcrectangularpyramid-layout1.png "Figure 1 &mdash; Rectangular pyramid geometry")
 
-> HISTORY  New entity in IFC2x3
+> HISTORY New entity in IFC2x3
 
 { .use-head}
 Texture use definition

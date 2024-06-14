@@ -15,7 +15,7 @@ Depending on the provision of _PnIndex_ the indices point either directly into t
 
 ![PnIndex](../../../../figures/ifcpolygonalfaceset_01.png "Figure 1 &mdash; Use of _PnIndex_")
 
-> NOTE  If the _IfcPolygonalFaceSet_ is closed, the face vertices of the _IfcIndexedPolygonalFace_'s shall connect counterclock-wise when seen from the outside of the closed shell to guarantee that the face normal points away from the material of the shell. Inner loops, provided by the _IfcIndexedPolygonalFaceWithVoids_, shall connect clock-wise.
+> NOTE If the _IfcPolygonalFaceSet_ is closed, the face vertices of the _IfcIndexedPolygonalFace_'s shall connect counterclock-wise when seen from the outside of the closed shell to guarantee that the face normal points away from the material of the shell. Inner loops, provided by the _IfcIndexedPolygonalFaceWithVoids_, shall connect clock-wise.
 
 ![IfcFacetedFaceSet_Example-01](../../../../figures/ifcfacetedfaceset_example-01.png)
 
@@ -34,9 +34,9 @@ Figure 2 shows an <em>IfcPolygonalFaceSet</em> represented by:
 ((0.,0.,0.), (1.,0.,0.), (1.,1.,0.), (0.,1.,0.), (0.,0.,2.), (1.,0.,2.), (1.,1.,2.), (0.,1.,2.))
 ```
 
-> NOTE  The definition of _IfcPolygonalFaceSet_ is based on the **indexedFaceSet** defined in ISO/IEC 19775-1
+> NOTE The definition of _IfcPolygonalFaceSet_ is based on the **indexedFaceSet** defined in ISO/IEC 19775-1
 
-> HISTORY  New entity in IFC4 Addendum 2.
+> HISTORY New entity in IFC4 Addendum 2.
 
 **Informal Propositions**
 
@@ -54,4 +54,4 @@ Indication whether the face set is a closed shell (TRUE) or an open shell (FALSE
 The list of polygonal faces, with or without inner loops, that bound the faceted face set.
 
 ### PnIndex
-The list of integers defining the locations in the _IfcCartesianPointList3D_ to obtain the point coordinates for the indices at the indexed polygonal faces. If the _PnIndex_ is not provided the indices at the indexed polygonal faces point directly into the  _IfcCartesianPointList3D_.
+The list of integers defining the locations in the _IfcCartesianPointList3D_ to obtain the point coordinates for the indices at the indexed polygonal faces. If the _PnIndex_ is not provided the indices at the indexed polygonal faces point directly into the _IfcCartesianPointList3D_.

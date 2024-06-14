@@ -8,9 +8,9 @@ A gulley trap may have 0,1,2,3 or 4 inlet connections and the pattern of their a
                2
                |
    ----------------
-   !                       |
-1-|                       |-3
-   !                       |
+   ! |
+1-| |-3
+   ! |
    ----------------
                |
               4

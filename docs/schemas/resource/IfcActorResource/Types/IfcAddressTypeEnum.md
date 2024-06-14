@@ -2,7 +2,7 @@
 
 This enumeration identifies the logical location of the address.
 
-> HISTORY  New enumeration in IFC2x.
+> HISTORY New enumeration in IFC2x.
 
 ## Items
 

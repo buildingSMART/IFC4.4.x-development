@@ -10,7 +10,7 @@ For the purposes of IFC the English term "alignment" defines three separate but 
 
 An alignment is used to define a reference system to position elements mainly for linear construction works, such as roads, rails, bridges, and others. The relative positioning along the alignment is defined by the linear referencing methodology.
 
-> NOTE  See ISO 19148 Geographic information &ndash; Linear referencing for general definitions about linear referencing.
+> NOTE See ISO 19148 Geographic information &ndash; Linear referencing for general definitions about linear referencing.
 
 **Kinematic perspective**
 

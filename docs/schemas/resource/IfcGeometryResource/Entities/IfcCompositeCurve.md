@@ -37,9 +37,9 @@ Then the parameterization of the composite curve is:
 
 
 >
-> NOTE  Entity adapted from **composite_curve** defined in ISO 10303-42.
+> NOTE Entity adapted from **composite_curve** defined in ISO 10303-42.
 
-> HISTORY  New entity in IFC1.0
+> HISTORY New entity in IFC1.0
 
 **Informal Propositions**
 

@@ -6,7 +6,7 @@ The predefined type container that collects all possible marine facility types t
 
 ### CANAL
 A man-made watercourse constructed usually, to join rivers, lakes or seas and often of a size suitable for navigation.
- NOTE definition in ISO 6707: channel constructed to carry water, usually for navigation, but which can also be used for water power, irrigation, collecting rainwater run-off , or drainage  of surface water.
+ NOTE definition in ISO 6707: channel constructed to carry water, usually for navigation, but which can also be used for water power, irrigation, collecting rainwater run-off , or drainage of surface water.
 
 ### WATERWAYSHIPLIFT
 A facility used for raising and lowering boats, ships and other watercraft between stretches of water of different levels on river and canal waterways or between impounded basins. This is achieved via an impounded trough of water which is mechanically lifted up and down.
@@ -45,7 +45,7 @@ A natural navigable watercourse (such as a river) that needs to be managed or ha
 ### BREAKWATER
 A longitudinal structure that protects a shore area, harbour, basin or estuary from waves.
  NOTE Definition in ISO 21650: structure protecting a shore area, harbour, anchorage and/or basin from waves
- NOTE Definition in ISO 6707: long structure  in a body of water designed to protect a basin or the shore from waves
+ NOTE Definition in ISO 6707: long structure in a body of water designed to protect a basin or the shore from waves
 
 ### DRYDOCK
 a Dry dock is an enclosed chamber (by gate) that allows the draining of water for the construction or repair of marine vessels.

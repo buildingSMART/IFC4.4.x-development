@@ -8,7 +8,7 @@ List the different mechanical Stress. In continuum mechanics, stress is a physic
 Compression is the application of balanced inward ("pushing") forces to different points on a material or structure.
 
 ### MECHANICAL_TRACTION
-Traction or tension is the application of balanced outward ("pulling") forces  to different points on a material or structure.
+Traction or tension is the application of balanced outward ("pulling") forces to different points on a material or structure.
 
 ### OTHER
 required category not on scale

@@ -12,7 +12,7 @@ The connection is described by a connection geometry, given within the object co
 
 Figure 1 &mdash; Path connection geometry
 
-Figure 1 shows the application of _IfcRelConnectsPathElements_ with the _ConnectionGeometry_ of type  _IfcConnectionCurveGeometry_. The example shows the connection relationship between two instances of layered _IfcWall_ elements using the _IfcRelConnectsPathElements_ relationship. The _ConnectionCurveGeometry_ defines the _CurveOnRelatingElement_ and _CurveOnRelatedElement_, both are of type _IfcPolyline_.
+Figure 1 shows the application of _IfcRelConnectsPathElements_ with the _ConnectionGeometry_ of type _IfcConnectionCurveGeometry_. The example shows the connection relationship between two instances of layered _IfcWall_ elements using the _IfcRelConnectsPathElements_ relationship. The _ConnectionCurveGeometry_ defines the _CurveOnRelatingElement_ and _CurveOnRelatedElement_, both are of type _IfcPolyline_.
 
 ![wall connection](../../../../figures/ifcrelconnectspathelements-fig2.png)
 
@@ -26,9 +26,9 @@ Figure 3 &mdash; Path connection L-Type
 
 Figure 3 illustrates using the _IfcRelConnectsPathElements_ for a "L" type connection between two instances of layered _IfcWall_ elements.
 
-> NOTE  The two wall axes connect in each case.
+> NOTE The two wall axes connect in each case.
 
-> HISTORY  New entity in IFC1.5.
+> HISTORY New entity in IFC1.5.
 
 ## Attributes
 

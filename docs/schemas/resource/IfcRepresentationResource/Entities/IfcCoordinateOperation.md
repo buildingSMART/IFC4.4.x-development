@@ -4,22 +4,22 @@ _IfcCoordinateOperation_ is an abstract supertype to handle any operation (trans
 
 By convention, a coordinate operation is given between a **source CRS**, being the more local (or child) CRS; and **target CRS**, being the more remote (or parent) CRS.
 
-> EXAMPLE  A common coordinate operation is the one between the local engineering coordinate system of a construction project and any map or other coordinate reference system.
+> EXAMPLE A common coordinate operation is the one between the local engineering coordinate system of a construction project and any map or other coordinate reference system.
 
 An _IfcCoordinateOperation_ allows to connect:
 - an _IfcGeometricRepresentationContext_ &ndash; a reference system of a virtual model
 - to an _IfcCoordinateReferenceSystem_ &ndash; the coordinate system which is related to the real world by datums.
 
-> EXAMPLE  This can is done by setting:
+> EXAMPLE This can is done by setting:
 > - the _IfcCoordinateOperation.SourceCRS_ to _IfcGeometricRepresentationContext_
 > - the _IfcCoordinateOperation.TargetCRS_ either to:
->    -	_IfcProjectedCRS_, for defined easting, northing and orthogonal height
->    -	_IfcGeographicCRS_, for defined latitude, longitude and ellipsoidal height
+> - _IfcProjectedCRS_, for defined easting, northing and orthogonal height
+> - _IfcGeographicCRS_, for defined latitude, longitude and ellipsoidal height
 
-> NOTE  _IfcProjectedCRS_ can be used to represent a projected CRS or a compound CRS, comprising of a projected CRS with a vertical CRS. See _IfcProjectedCRS_ for further details.
+> NOTE _IfcProjectedCRS_ can be used to represent a projected CRS or a compound CRS, comprising of a projected CRS with a vertical CRS. See _IfcProjectedCRS_ for further details.
 
 { .extDef}
-> NOTE  Definition from OpenGIS Abstract Specification, Topic 2:
+> NOTE Definition from OpenGIS Abstract Specification, Topic 2:
 > If the relationship between any two coordinate reference systems is known, coordinates can be transformed or converted to another coordinate reference system. Coordinate operations are divided into two subtypes:
 >
 > * _Coordinate conversion_ &ndash; mathematical operation on coordinates that does not include any change of datum. The best-known example of a coordinate conversion is a map projection. The parameters describing coordinate conversions are defined rather than empirically derived. Note that some conversions have no parameters.
@@ -35,7 +35,7 @@ There are three types of _IfcCoordinateOperation_. The one to be used depends on
 ![Coordinate operations](../../../../figures/ifccoordinateoperation.png)
 Figure COORDOPS &mdash; Possible coordinate operations between coordinate reference systems
 
-> HISTORY  New entity in IFC4.
+> HISTORY New entity in IFC4.
 
 ## Attributes
 

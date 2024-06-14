@@ -25,7 +25,7 @@ Table 1 &mdash; Representation identifiers
 
 Several representation types for shape representation are included as predefined values for _RepresentationType_. Table 2 indicates the defined list of values for _RepresentationType_.
 
-Type |  Description
+Type | Description
 --- | ---
 Point | 2 or 3 dimensional point(s). Points can be represented by a point list
 PointCloud | 3 dimensional points represented by a point list. DEPRECATED. Use 'Point' instead.
@@ -60,12 +60,12 @@ MappedRepresentation | representation based on mapped item(s), referring to a re
 Table 2 &mdash; Representation types
 
 { .extDef}
-> NOTE  The definition relates to **shape_representation** defined in ISO 10303-41.
+> NOTE The definition relates to **shape_representation** defined in ISO 10303-41.
 
-> HISTORY  New entity in IFC1.5.
+> HISTORY New entity in IFC1.5.
 
 { .change-ifc2x4}
-> IFC4 CHANGE  The _RepresentationType_'s 'Point', 'PointCloud', 'Curve', 'Curve3D', 'Surface', 'Surface2D', 'Surface3D', 'FillArea', 'Text', 'Tessellation', 'AdvancedBrep', 'LightSource', and the _RepresentationIdentifier_ 'Body-FallBack', 'Profile', 'Clearance', 'Lighting' have been added.
+> IFC4 CHANGE The _RepresentationType_'s 'Point', 'PointCloud', 'Curve', 'Curve3D', 'Surface', 'Surface2D', 'Surface3D', 'FillArea', 'Text', 'Tessellation', 'AdvancedBrep', 'LightSource', and the _RepresentationIdentifier_ 'Body-FallBack', 'Profile', 'Clearance', 'Lighting' have been added.
 
 ## Formal Propositions
 

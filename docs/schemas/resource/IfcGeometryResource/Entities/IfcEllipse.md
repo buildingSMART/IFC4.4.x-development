@@ -13,7 +13,7 @@ Definition of the <em>IfcEllipse</em> within the a three-dimensional position co
 It is placed within the object coordinate system of an element of which it is a
 representation.
 
-> NOTE  An elliptical arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_ being an _IfcEllipse_.
+> NOTE An elliptical arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_ being an _IfcEllipse_.
 
 { .extDef}
 > REFERENCE Definition according to ISO/CD 10303-42:1992
@@ -42,7 +42,7 @@ The positive sense of the ellipse at any point is in the tangent direction, T, t
 
 $$ T = (-C_y,C_x,0) $$
 
-> HISTORY  New entity in IFC1.0
+> HISTORY New entity in IFC1.0
 
 ## Attributes
 

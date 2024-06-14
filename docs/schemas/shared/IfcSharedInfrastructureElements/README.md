@@ -19,4 +19,4 @@ The scope of this includes concepts to cover the definition of:
 * Signs
 * Signals
 
-> HISTORY  New schema in IFC4x3.
+> HISTORY New schema in IFC4x3.

@@ -4,4 +4,4 @@ _IfcMassPerLengthMeasure_ is a measure for mass per length. For example for roll
 
 Type: REAL
 
-> HISTORY  New type in IFC2x2.
+> HISTORY New type in IFC2x2.

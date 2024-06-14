@@ -2,7 +2,7 @@
 
 This enumeration defines the basic types of projection elements.
 
-> HISTORY  New enumeration in IFC4.
+> HISTORY New enumeration in IFC4.
 
 ## Items
 

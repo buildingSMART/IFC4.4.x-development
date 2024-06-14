@@ -6,4 +6,4 @@ A energy conversion type is used to define the common properties of a energy con
 
 Occurrences of the _IfcEnergyConversionDeviceType_ are represented by instances of _IfcEnergyConversionDevice_ or its subtypes.
 
-> HISTORY  New entity in IFC2x2.
+> HISTORY New entity in IFC2x2.

@@ -11,19 +11,19 @@ There are two main representations for column occurrences:
 
 For any longitudial structural member, not constrained to be predominately horizontal nor vertical, or where this semantic information is irrelevant, the entity _IfcMember_ exists.
 
-> REFERENCE  Definition according to ISO 6707-1 structural member of slender form, usually vertical, that transmits to its base the forces, primarily in compression, that are applied to it.
+> REFERENCE Definition according to ISO 6707-1 structural member of slender form, usually vertical, that transmits to its base the forces, primarily in compression, that are applied to it.
 
-> NOTE  The entity _IfcColumnStandardCase_ has been deleted, _IfcColumn_ with _IfcMaterialProfileSetUsage_ is used instead.
+> NOTE The entity _IfcColumnStandardCase_ has been deleted, _IfcColumn_ with _IfcMaterialProfileSetUsage_ is used instead.
 
-> NOTE  The representation of a column in a structural analysis model is provided by _IfcStructuralCurveMember_ being part of an _IfcStructuralAnalysisModel_.
+> NOTE The representation of a column in a structural analysis model is provided by _IfcStructuralCurveMember_ being part of an _IfcStructuralAnalysisModel_.
 
-> HISTORY  New entity in IFC1.0
+> HISTORY New entity in IFC1.0
 
 ## Attributes
 
 ### PredefinedType
 Predefined generic type for a column that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE  The _PredefinedType_ shall only be used, if no _IfcColumnType_ is assigned, providing its own _IfcColumnType.PredefinedType_.
+> NOTE The _PredefinedType_ shall only be used, if no _IfcColumnType_ is assigned, providing its own _IfcColumnType.PredefinedType_.
 
 { .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.

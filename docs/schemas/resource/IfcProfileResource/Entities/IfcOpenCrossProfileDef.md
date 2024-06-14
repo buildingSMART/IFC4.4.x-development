@@ -11,7 +11,7 @@ The behaviour of OpenCrossProfileDef in sweeping operation can be controlled by 
 Indicates if the widths shall be measured horizontally or along the slopes.
 
 ### Widths
-The horizontal widths (when HorizontalWidths=.T.) or distances along the Slope (when HorizontalWidths=.F.)  for the segments in the profile. And if Horizontal=.T. the Slopes shall not be = +/- 90 deg.
+The horizontal widths (when HorizontalWidths=.T.) or distances along the Slope (when HorizontalWidths=.F.) for the segments in the profile. And if Horizontal=.T. the Slopes shall not be = +/- 90 deg.
 
 ### Slopes
 The slope measure.

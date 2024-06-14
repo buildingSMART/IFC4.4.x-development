@@ -14,7 +14,7 @@ The _IfcRelDefinesByObject_ can be used together with the shape representations 
 
 ![geometry diagram](../../../../figures/ifcreldefinesbyobject_fig-2.png "Figure 2 &mdash; Part definition relationships with shape representation")
 
-> HISTORY  New entity in IFC4.
+> HISTORY New entity in IFC4.
 
 ## Attributes
 

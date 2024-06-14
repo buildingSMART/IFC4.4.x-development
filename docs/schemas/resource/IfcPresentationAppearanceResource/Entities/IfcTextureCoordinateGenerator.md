@@ -4,12 +4,12 @@ The _IfcTextureCoordinateGenerator_ describes a procedurally defined mapping fun
 
 The TextureCoordinateGenerator supports the automatic generation of texture coordinates for geometric shapes.
 
-> NOTE  The definitions of texturing within this standard have been developed in dependence on the texture component of X3D. See ISO/IEC 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1, 18 Texturing component for the definitions in the international standard.
+> NOTE The definitions of texturing within this standard have been developed in dependence on the texture component of X3D. See ISO/IEC 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1, 18 Texturing component for the definitions in the international standard.
 
-> HISTORY  New entity in IFC2x2.
+> HISTORY New entity in IFC2x2.
 
 { .change-ifc2x2}
-> IFC2x2 Add2 CHANGE  The attribute Texture has been deleted.
+> IFC2x2 Add2 CHANGE The attribute Texture has been deleted.
 
 ## Attributes
 

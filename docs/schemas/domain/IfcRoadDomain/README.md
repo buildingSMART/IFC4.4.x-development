@@ -49,4 +49,4 @@ The following topics are out of scope:
 - tramways;
 - city scape / urban planning.
 
-> HISTORY  New schema in IFC4x3.
+> HISTORY New schema in IFC4x3.

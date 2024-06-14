@@ -6,4 +6,4 @@ Usually measured in Sievert (Sv, J/kg).
 
 Type: REAL
 
-> HISTORY  New type in IFC2x.
+> HISTORY New type in IFC2x.

@@ -2,13 +2,13 @@
 
 This enumeration defines the available generic types for _IfcBuildingElementProxy_ or _IfcBuildingElementProxyType_.
 
-> HISTORY  New enumeration IFC2x3
+> HISTORY New enumeration IFC2x3
 
-> IFC4.3.0.0 CHANGE  Enumerators PROVISIONFORVOID and PROVISIONFORSPACE deprecated. Use an _IfcVirtualElement_ with PROVISIONFORVOID and CLEARANCE at _IfcVirtualElementTypeEnum_ instead.
+> IFC4.3.0.0 CHANGE Enumerators PROVISIONFORVOID and PROVISIONFORSPACE deprecated. Use an _IfcVirtualElement_ with PROVISIONFORVOID and CLEARANCE at _IfcVirtualElementTypeEnum_ instead.
 
-> IFC4 CHANGE  Enumerators PROVISIONFORVOID and PROVISIONFORSPACE added.
+> IFC4 CHANGE Enumerators PROVISIONFORVOID and PROVISIONFORSPACE added.
 
-> DEPRECATION  The enumerator COMPLEX, ELEMENT, PARTIAL shall no longer be used.
+> DEPRECATION The enumerator COMPLEX, ELEMENT, PARTIAL shall no longer be used.
 
 ## Items
 

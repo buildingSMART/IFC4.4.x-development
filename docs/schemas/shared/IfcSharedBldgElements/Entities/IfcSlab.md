@@ -12,7 +12,7 @@ There are two main representations for slab occurrences:
 
 - _IfcSlab_ without _IfcMaterialLayerSetUsage_ is used for all other occurrences of slabs, particularly for slabs with changing thickness, or slabs with non planar surfaces, and slabs having only 'SweptSolid' or 'Brep' geometry, or if a more parametric representation is not intended.
 
-> REFERENCE  Definition according to ISO 6707-1: thick, flat or shaped component, usually larger than 300 mm square, used to form a covering or projecting from a building.
+> REFERENCE Definition according to ISO 6707-1: thick, flat or shaped component, usually larger than 300 mm square, used to form a covering or projecting from a building.
 
 > NOTE  An arbitrary planar element to which this semantic information is not applicable or irrelevant shall be modeled as _IfcPlate_.
 
@@ -20,13 +20,13 @@ There are two main representations for slab occurrences:
 
 > NOTE There is a representation of slabs for structural analysis provided by a proper subtype of _IfcStructuralMember_ being part of the _IfcStructuralAnalysisModel_.
 
-> HISTORY  New entity in IFC2.0; it is a merger of the two previous entities _IfcFloor_, _IfcRoofSlab_, introduced in IFC1.0
+> HISTORY New entity in IFC2.0; it is a merger of the two previous entities _IfcFloor_, _IfcRoofSlab_, introduced in IFC1.0
 
 ## Attributes
 
 ### PredefinedType
 Predefined generic type for a slab that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE  The _PredefinedType_ shall only be used, if no _IfcSlabType_ is assigned, providing its own _IfcSlabType.PredefinedType_.
+> NOTE The _PredefinedType_ shall only be used, if no _IfcSlabType_ is assigned, providing its own _IfcSlabType.PredefinedType_.
 
 { .change-ifc2x}
 > IFC2x CHANGE The attribute has been changed into an OPTIONAL attribute.

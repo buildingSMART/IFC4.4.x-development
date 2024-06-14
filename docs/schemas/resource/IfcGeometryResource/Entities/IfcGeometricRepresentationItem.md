@@ -17,6 +17,6 @@ An indirect reference to a Cartesian point or direction means that a given geome
 
 
 >
-> NOTE  Entity adapted from **geometric_representation_item** defined in ISO 10303-42.
+> NOTE Entity adapted from **geometric_representation_item** defined in ISO 10303-42.
 
-> HISTORY  New entity in IFC1.5
+> HISTORY New entity in IFC1.5

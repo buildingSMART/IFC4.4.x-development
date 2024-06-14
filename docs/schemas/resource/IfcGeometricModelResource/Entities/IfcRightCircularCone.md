@@ -10,9 +10,9 @@ Figure 1 illustrates geometric parameters of the cone. The cone is positioned wi
 
 ![cone1](../../../../figures/ifcrightcircularcone-layout1.png "Figure 1 &mdash; Right circular cone geometry")
 
-> NOTE  Entity adapted from **right_circular_cone** defined in ISO 10303-42.
+> NOTE Entity adapted from **right_circular_cone** defined in ISO 10303-42.
 
-> HISTORY  New entity in IFC2x3
+> HISTORY New entity in IFC2x3
 
 { .use-head}
 Texture use definition

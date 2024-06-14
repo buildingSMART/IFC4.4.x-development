@@ -14,17 +14,17 @@ The identification of the meridian defining zero longitude in the used geographi
 
 Unit of latitude and longitude coordinate axes composing the geographic coordinate system.
 
-> NOTE  Only plane angle measures are in scope and both longitude and latitude coordinate axes of the geographic coordinate system shall have the same plane angle unit.
+> NOTE Only plane angle measures are in scope and both longitude and latitude coordinate axes of the geographic coordinate system shall have the same plane angle unit.
 
-> NOTE  If _AngleUnit_ is omitted, the unit for latitude and longitude coordinate axes is taken from the default project angle units, as stated in _IfcProject.UnitInContext_.
+> NOTE If _AngleUnit_ is omitted, the unit for latitude and longitude coordinate axes is taken from the default project angle units, as stated in _IfcProject.UnitInContext_.
 
 ### HeightUnit
 
 Unit of the height coordinate axis of the geographic coordinate system.
 
-> NOTE  Only length measures are in scope.
+> NOTE Only length measures are in scope.
 
-> NOTE  If _HeightUnit_ is omitted, the unit for the height coordinate axis is taken from the default project length units, as stated in _IfcProject.UnitInContext_.
+> NOTE If _HeightUnit_ is omitted, the unit for the height coordinate axis is taken from the default project length units, as stated in _IfcProject.UnitInContext_.
 
 ## Formal Propositions
 

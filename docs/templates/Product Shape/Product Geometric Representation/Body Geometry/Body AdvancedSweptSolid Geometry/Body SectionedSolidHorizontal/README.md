@@ -1,7 +1,7 @@
 Body SectionedSolidHorizontal
 =============================
 
-The _Body SectionedSolidHorizontal_ is the representation of the 3D body of a product by using two or more closed profiles, possibly with varying dimensions,  that are swept between specified positions along the directrix.
+The _Body SectionedSolidHorizontal_ is the representation of the 3D body of a product by using two or more closed profiles, possibly with varying dimensions, that are swept between specified positions along the directrix.
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 

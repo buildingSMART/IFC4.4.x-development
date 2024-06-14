@@ -6,10 +6,10 @@ A task is typically used to describe an activity for the construction or install
 
 Quantities of resources consumed by the task are dealt with by defining the _IfcElementQuantity_ for the resource and not at the instance of _IfcTask_.
 
-> HISTORY  New entity in IFC1.0. Renamed from _IfcWorkTask_ in IFC2x.
+> HISTORY New entity in IFC1.0. Renamed from _IfcWorkTask_ in IFC2x.
 
 { .change-ifc2x4}
-> IFC4 CHANGE  Attributes _TaskTime_ and _PredefinedType_ added. _IfcMove_ and _IfcOrderRequest_ have been removed in IFC4 and are now represented by _IfcTask_. _IfcRelAssignsTasks_ relationship has been removed as well.
+> IFC4 CHANGE Attributes _TaskTime_ and _PredefinedType_ added. _IfcMove_ and _IfcOrderRequest_ have been removed in IFC4 and are now represented by _IfcTask_. _IfcRelAssignsTasks_ relationship has been removed as well.
 
 { .use-head}
 ### Attribute use definition
@@ -42,17 +42,17 @@ _IfcTask_ can also be used to describe an activity that moves people, groups wit
 ### Status
 Current status of the task.
 
-> NOTE  Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include 'NOTSTARTED', 'STARTED', 'COMPLETED'.
+> NOTE Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include 'NOTSTARTED', 'STARTED', 'COMPLETED'.
 
 ### WorkMethod
 The method of work used in carrying out a task.
 
-> NOTE  This attribute should not be used if the work method is specified for the _IfcTaskType_
+> NOTE This attribute should not be used if the work method is specified for the _IfcTaskType_
 
 ### IsMilestone
 Identifies whether a task is a milestone task (= TRUE) or not (= FALSE).
 
-> NOTE  In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time.
+> NOTE In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time.
 
 ### Priority
 A value that indicates the relative priority of the task (in comparison to the priorities of other tasks).
@@ -208,7 +208,7 @@ A top-level task is declared within the _IfcProject_ using the _IfcRelDeclares_ 
 
 The _IfcTask_ defines the anticipated or actual occurrence of any task; common information about task types is handled by _IfcTaskType_.
 
-> EXAMPLE  It includes fixed duration, fixed unit or fixed work. An _IfcTask_ can be aggregated to a task type in order to specify a task sequence or any time related information, e.g. the duration of a task. Please see the documentation of _IfcTaskType_ for further information.
+> EXAMPLE It includes fixed duration, fixed unit or fixed work. An _IfcTask_ can be aggregated to a task type in order to specify a task sequence or any time related information, e.g. the duration of a task. Please see the documentation of _IfcTaskType_ for further information.
 
 ### Process Assignment
 

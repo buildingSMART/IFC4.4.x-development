@@ -33,7 +33,7 @@ The subtypes of _IfcSpatialStructureElement_ relate to each other by using the _
 
 Figure 1 &mdash; Spatial structure element composition
 
-> HISTORY  New entity in IFC2x.
+> HISTORY New entity in IFC2x.
 
 **Informal Propositions**
 
@@ -47,7 +47,7 @@ Figure 1 &mdash; Spatial structure element composition
 ### CompositionType
 Denotes, whether the predefined spatial structure element represents itself, or an aggregate (complex) or a part (part). The interpretation is given separately for each subtype of spatial structure element. If no _CompositionType_ is asserted, the default value ''ELEMENT'' applies.
 
-> IFC4 CHANGE  Attribute made optional.
+> IFC4 CHANGE Attribute made optional.
 
 ## Formal Propositions
 

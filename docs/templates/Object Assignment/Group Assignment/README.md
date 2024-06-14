@@ -9,9 +9,9 @@ The _Group Assignment_ establish a group being the collection for other objects.
 * Objects included in a group as collected items are linked by _IsGroupedBy_ pointing to _IfcRelAssignsToGroup_.
 * Collected items may include sub groups. Therefore the _Group Assignment_ may establish a tree
 
-> NOTE  The _IfcGroup_ may not yet have a grouping relationship established, it then identifies an empty group.
+> NOTE The _IfcGroup_ may not yet have a grouping relationship established, it then identifies an empty group.
 
-> EXAMPLE  An air handler belonging to an air conditioning system is an example of such group assignment.
+> EXAMPLE An air handler belonging to an air conditioning system is an example of such group assignment.
 
 ```
 concept {

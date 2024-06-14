@@ -3,7 +3,7 @@ Set Of Survey Points
 
 Geometry representation of a set of survey points. They can be 2D points or 3D points. The set of points may not form a closed surface or a survey line.
 
-> NOTE  When a single _IfcAnnotation_ is represented by multiple survey points, it is not possible to associate properties to the single geometrical points of the set, but only to the whole annotation. 
+> NOTE When a single _IfcAnnotation_ is represented by multiple survey points, it is not possible to associate properties to the single geometrical points of the set, but only to the whole annotation. 
 
 ```
 concept {

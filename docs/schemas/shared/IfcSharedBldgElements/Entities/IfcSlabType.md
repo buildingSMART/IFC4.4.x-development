@@ -9,11 +9,11 @@ The element type _IfcSlabType_ defines commonly shared information for occurrenc
 
 It is used to define a slab specification (i.e. the specific product information, that is common to all occurrences of that product type). Slab types may be exchanged without being already assigned to occurrences.
 
-> NOTE  The product representations are defined as representation maps (at the level of the supertype _IfcTypeProduct_, which gets assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[1]_ being an _IfcMappedItem_.
+> NOTE The product representations are defined as representation maps (at the level of the supertype _IfcTypeProduct_, which gets assigned by an element occurrence instance through the _IfcShapeRepresentation.Item[1]_ being an _IfcMappedItem_.
 
 The occurrences of the _IfcSlabType_ within building models are represented by instances of _IfcSlab_.
 
-> HISTORY  New entity in IFC2x2.
+> HISTORY New entity in IFC2x2.
 
 **Informal Propositions**
 

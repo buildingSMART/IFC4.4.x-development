@@ -5,7 +5,7 @@ _IfcPropertyEnumeration_ is a collection of simple or measure values that define
 The unit is handled by the _Unit_ attribute, see Table 1 for an example of a unitless property enumeration:
 
 * If the _Unit_ attribute is not given, than the unit is already implied by the type of _IfcMeasureValue_ or _IfcDerivedMeasureValue_. The associated unit can be found at the _IfcUnitAssignment_ globally defined at the project level (_IfcProject.UnitsInContext_).
-*  If the _Unit_ attribute is given, the unit assigned by the unit attribute overrides the globally assigned unit.
+* If the _Unit_ attribute is given, the unit assigned by the unit attribute overrides the globally assigned unit.
 
 
 |Name|EnumerationValues|Type (through IfcValue)|Unit|
@@ -17,10 +17,10 @@ The unit is handled by the _Unit_ attribute, see Table 1 for an example of a uni
 
 Table 1 &mdash; Property enumeration with values, measure types and units
 
-> HISTORY  New entity in IFC2.0, capabilities enhanced in IFC2x.
+> HISTORY New entity in IFC2.0, capabilities enhanced in IFC2x.
 
 { .change-ifc2x}
-> IFC2x CHANGE  Entity has been renamed from IfcEnumeration
+> IFC2x CHANGE Entity has been renamed from IfcEnumeration
 
 ## Attributes
 

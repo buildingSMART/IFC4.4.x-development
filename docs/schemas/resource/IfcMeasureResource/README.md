@@ -3,9 +3,9 @@ IfcMeasureResource
 
 The _IfcMeasureResource_ schema specifies units and defined measure types that may be assigned to quantities.
 
-> NOTE  The fundamental unit types used in this schema are based on the SI system defined in ISO 1000+A1, 1992, 1998. Units in measurement systems other than SI may be derived using this schema. Many definitions declared in the _IfcMeasureResource_ schema is adapted from [ISO 10303-41](../content/bibliography.htm#iso-10303-41)
+> NOTE The fundamental unit types used in this schema are based on the SI system defined in ISO 1000+A1, 1992, 1998. Units in measurement systems other than SI may be derived using this schema. Many definitions declared in the _IfcMeasureResource_ schema is adapted from [ISO 10303-41](../content/bibliography.htm#iso-10303-41)
 
-> NOTE  In the definitions of the unit exponents the use of superscript font has been omitted. Therefore, m2 means square metre, m3 means cubic meter.
+> NOTE In the definitions of the unit exponents the use of superscript font has been omitted. Therefore, m2 means square metre, m3 means cubic meter.
 
 In different types of units there are five basic cases:
 
@@ -57,7 +57,7 @@ END_ENTITY;
 
 Although in the cases 2 and 3 different units could be used for different instances of the same entity type or for the same measure type in attributes of different entity types, it is recommended not to mix different units for same measure defined types, if it can be avoided. Below some examples of each of the above basic cases are given.
 
-> NOTE  In the example instantiations in the form of IFC data exchange files, mainly the measure and unit -relevant attributes are given the values; the other attributes are given no values (in the form of $-sign) independent of whether they should actually have values because of being nonoptional attributes.
+> NOTE In the example instantiations in the form of IFC data exchange files, mainly the measure and unit -relevant attributes are given the values; the other attributes are given no values (in the form of $-sign) independent of whether they should actually have values because of being nonoptional attributes.
 
 Table 1 indicates measures, units, and corresponding data types.
 
@@ -83,7 +83,7 @@ Table 1 indicates measures, units, and corresponding data types.
 |-||||||||IfcDate (lexical representation according to ISO 8601)|
 |-||||||||IfcDateTime (lexical representation according to ISO 8601)|
 |Dose equivalent, dose equivalent index|SI / Derived|sievert|Sv|J / kg|SIEVERT|DOSEEQUIVALENTUNIT||IfcDoseEquivalentMeasure|
-|-||||||||IfcDuration  (lexical representation according to ISO 8601)|
+|-||||||||IfcDuration (lexical representation according to ISO 8601)|
 |Dynamic viscosity|Derived|||Pa · s|||DYNAMICVISCOSITYUNIT|IfcDynamicViscosityMeasure|
 |Electric charge, quantity of electricity|SI / Derived|coulomb|C|A · s|COULOMB|ELECTRICCHARGEUNIT||IfcElectricChargeMeasure|
 |Electric conductance|SI / Derived|siemens|S|1 / W|SIEMENS|ELECTRICCONDUCTANCEUNIT||IfcElectricConductanceMeasure|
@@ -161,7 +161,7 @@ Table 1 indicates measures, units, and corresponding data types.
 |Thermal resistance|Derived|||m2 · K / W|||THERMALRESISTANCEUNIT|IfcThermalResistanceMeasure|
 |Thermal transmittance|Derived|||W / m2 · K|||THERMALTRANSMITTANCEUNIT|IfcThermalTransmittanceMeasure|
 |Thermodynamic temperature|SI / Basic|kelvin|K||KELVIN|THERMODYNAMICTEMPERATUREUNIT||IfcThermodynamicTemperatureMeasure|
-|-||||||||IfcTime     (lexical representation according to ISO 8601)|
+|-||||||||IfcTime (lexical representation according to ISO 8601)|
 |Time|SI / Basic|second|s||SECOND|TIMEUNIT||IfcTimeMeasure|
 |-||||||||IfcTimeStamp|
 |Torque|Derived|||N· m|||TORQUEUNIT|IfcTorqueMeasure|

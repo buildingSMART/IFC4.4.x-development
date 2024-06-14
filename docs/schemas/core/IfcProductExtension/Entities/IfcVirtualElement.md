@@ -16,9 +16,9 @@ Figure 1 &mdash; Virtual element used as space boundaries
 
 > IFC4.3.0.0 CHANGE Virtual elements can now be used for void provisions and clearance to replace existing functionality on _IfcBuildingElementProxy_.
 
-> IFC2x2 CHANGE  The entity _IfcVirtualElement_ has been added. Upward compatibility for file based exchange is guaranteed.
+> IFC2x2 CHANGE The entity _IfcVirtualElement_ has been added. Upward compatibility for file based exchange is guaranteed.
 
-> HISTORY  New entity in IFC2x2 Addendum.
+> HISTORY New entity in IFC2x2 Addendum.
 
 ## Formal Propositions
 

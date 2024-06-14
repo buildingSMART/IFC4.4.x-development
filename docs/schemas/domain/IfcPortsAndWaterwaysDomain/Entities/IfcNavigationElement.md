@@ -7,7 +7,7 @@ Navigation elements can aggregate other components and elements to form the enti
 
 ### PredefinedType
 Identifies the predefined type of a navigational element. This type may associate additional specific property sets.
-NOTE  The PredefinedType shall only be used, if no _IfcNavigationElementType_  is assigned, providing its own IfcNavigationElementType.PredefinedType.
+NOTE The PredefinedType shall only be used, if no _IfcNavigationElementType_ is assigned, providing its own IfcNavigationElementType.PredefinedType.
 
 ## Formal Propositions
 

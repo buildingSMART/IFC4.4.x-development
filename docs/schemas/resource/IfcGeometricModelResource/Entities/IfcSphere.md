@@ -10,15 +10,15 @@ The _IfcSphere_ is a Construction Solid Geometry (CSG) 3D primitive. It is a sol
 
 Figure 1 &mdash; Sphere geometry
 
-> EXAMPLE  Figure 1 illustrates geometric parameters of the sphere. The sphere is positioned within its own placement coordinate system relative to the object coordinate system. The origin is the center of the sphere.
+> EXAMPLE Figure 1 illustrates geometric parameters of the sphere. The sphere is positioned within its own placement coordinate system relative to the object coordinate system. The origin is the center of the sphere.
 
 { .extDef}
-> NOTE  Definition according to ISO/CD 10303-42:1992
+> NOTE Definition according to ISO/CD 10303-42:1992
 > A sphere is a CSG primitive with a spherical shape defined by a centre and a radius.
 
-> NOTE  Entity adapted from **sphere** defined in ISO 10303-42.
+> NOTE Entity adapted from **sphere** defined in ISO 10303-42.
 
-> HISTORY  New entity in IFC2x3.
+> HISTORY New entity in IFC2x3.
 
 { .use-head}
 Texture Use Definition

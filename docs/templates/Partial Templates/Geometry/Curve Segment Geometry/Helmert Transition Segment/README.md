@@ -8,7 +8,7 @@ QuadraticTerm = L/√2
 rest are 0.
 
 Terms for the second half of the segment:
-QuadraticTerm =  -L/√2
+QuadraticTerm = -L/√2
 LinearTerm = L/4
 Constant = -1
 

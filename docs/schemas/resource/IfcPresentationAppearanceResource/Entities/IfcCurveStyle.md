@@ -4,21 +4,21 @@ An _IfcCurveStyle_ provides the style table for presentation information assigne
 
 Styles are intended to be shared by multiple _IfcStyledItem_'s, assigning the style to occurrences of (subtypes of) _IfcGeometricRepresentationItem_'s. Measures given to a font pattern or a curve width are given in global drawing length units.
 
-> NOTE  global units are defined at the single _IfcProject_ instance, given by _UnitsInContext:IfcUnitAssignment_, the same units are used for the geometric representation items and for the style definitions.
+> NOTE global units are defined at the single _IfcProject_ instance, given by _UnitsInContext:IfcUnitAssignment_, the same units are used for the geometric representation items and for the style definitions.
 
 The measure values for font pattern and curve width apply to the model space with a target plot scale provided for the correct appearance in the default plot scale.
 
-> NOTE  the target plot scale is given by _IfcGeometricRepresentationSubContext.TargetScale_.
+> NOTE the target plot scale is given by _IfcGeometricRepresentationSubContext.TargetScale_.
 
 An _IfcCurveStyle_ can be assigned to _IfcGeometricRepresentationItem_'s via the _IfcStyledItem_.
 
 { .extDef}
-> NOTE  Definition according to ISO/CD 10303-46:1992
+> NOTE Definition according to ISO/CD 10303-46:1992
 > A curve style specifies the visual appearance of curves.
 
-> NOTE  Corresponding ISO 10303 name: curve_style. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.
+> NOTE Corresponding ISO 10303 name: curve_style. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.
 
-> HISTORY  New entity in IFC2x2.
+> HISTORY New entity in IFC2x2.
 
 ## Attributes
 
@@ -34,7 +34,7 @@ The colour of the visible part of the curve. If not given, then the colour shoul
 ### ModelOrDraughting
 Indication whether the length measures provided for the presentation style are model based, or draughting based.
 { .change-ifc2x4}
-> IFC4 CHANGE  New attribute.
+> IFC4 CHANGE New attribute.
 
 ## Formal Propositions
 

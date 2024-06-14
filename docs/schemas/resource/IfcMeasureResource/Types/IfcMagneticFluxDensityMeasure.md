@@ -6,4 +6,4 @@ Usually measured in Tesla (T, Weber/m2 = V s/m2).
 
 Type: REAL
 
-> HISTORY  New type in IFC2x.
+> HISTORY New type in IFC2x.

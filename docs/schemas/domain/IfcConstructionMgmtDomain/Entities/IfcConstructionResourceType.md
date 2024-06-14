@@ -6,7 +6,7 @@ A resource type represents a model of "use of something" and does not necessaril
 
 A construction resource type captures common productivities and cost rates for applying resources to particular task types.
 
-> HISTORY  New entity in IFC4.
+> HISTORY New entity in IFC4.
 
 { .use-head}
 Composition use definition
@@ -23,7 +23,7 @@ Resource types may be assigned to process types (_IfcTypeProcess_ subtypes) usin
 ## Attributes
 
 ### BaseCosts
-Indicates the unit costs and environmental impacts for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (e.g. 'Standard', 'Overtime'), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
+Indicates the unit costs and environmental impacts for which accrued amounts should be calculated. Such unit costs may be split into _Name_ designations (e.g. 'Standard', 'Overtime'), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).
 
 ### BaseQuantity
-Identifies the quantity for which the _BaseQuantityProduced_ applies.  The _Name_ of the _IfcPhysicalQuantity_ identifies the quantity definition being measured, e.g. "GrossVolume".  For production-based resources (e.g. carpentry labor), this value refers to quantities on _IfcProduct_(s) to which the assigned _IfcTask_ is assigned.  For duration-based resources (e.g. safety inspector, fuel for equipment), this value refers to quantities that may be assigned to occurrences of the assigned _IfcTaskType_.
+Identifies the quantity for which the _BaseQuantityProduced_ applies. The _Name_ of the _IfcPhysicalQuantity_ identifies the quantity definition being measured, e.g. "GrossVolume". For production-based resources (e.g. carpentry labor), this value refers to quantities on _IfcProduct_(s) to which the assigned _IfcTask_ is assigned. For duration-based resources (e.g. safety inspector, fuel for equipment), this value refers to quantities that may be assigned to occurrences of the assigned _IfcTaskType_.

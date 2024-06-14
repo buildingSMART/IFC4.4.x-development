@@ -2,7 +2,7 @@
 
 This enumeration defines the basic configuration types for element assemblies.
 
-> HISTORY  New enumeration in IFC2x2.
+> HISTORY New enumeration in IFC2x2.
 
 ## Items
 

@@ -16,12 +16,12 @@ coordinate system. The values for <em>XLength</em>, <em>YLength</em>, and <em>ZL
 direction of the X, Y, and Z axis.
 
 { .extDef}
-> NOTE  Definition according to ISO 10303-42
+> NOTE Definition according to ISO 10303-42
 > A block is a type of geometric representation item which is a solid rectangular parallelepiped, defined with a location and placement coordinate system. The block is specified by the positive lengths x, y, and z along the axes of the placement coordinate system, and has one vertex at the origin of the placement coordinate system.
 
-> NOTE  Entity adapted from **block** defined in ISO 10303-42.
+> NOTE Entity adapted from **block** defined in ISO 10303-42.
 
-> HISTORY  New entity in IFC2x3.
+> HISTORY New entity in IFC2x3.
 
 { .use-head}
 Texture definition

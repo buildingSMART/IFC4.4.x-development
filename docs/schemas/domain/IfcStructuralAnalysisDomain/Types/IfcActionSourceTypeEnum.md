@@ -2,7 +2,7 @@
 
 This enumeration type contains possible action sources.
 
-> HISTORY  New enumeration in IFC2x2.
+> HISTORY New enumeration in IFC2x2.
 
 ## Items
 

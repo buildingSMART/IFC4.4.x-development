@@ -2,7 +2,7 @@
 
 Enumeration defining the typical types of compressors.
 
-> HISTORY  New enumeration in IFC2x.
+> HISTORY New enumeration in IFC2x.
 
 ## Items
 

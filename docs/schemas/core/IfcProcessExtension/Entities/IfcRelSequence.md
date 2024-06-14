@@ -4,9 +4,9 @@ _IfcRelSequence_ is a sequential relationship between processes where one proces
 
 _IfcRelSequence_ is defined as one-to-one relationship; therefore it assigns one predecessor to one successor.
 
-> HISTORY  New entity in IFC1.0.
+> HISTORY New entity in IFC1.0.
 
-> IFC4 CHANGE  Relocated to _IfcProcessExtension_ schema. _TimeLag_ and _SequenceType_ made optional. _USERDEFINED_ added to the _IfcSequenceEnum_ enumeration. _UserDefinedSequenceType_ attribute added. WHERE rule controlling use of the _USERDEFINED_ enumeration added.
+> IFC4 CHANGE Relocated to _IfcProcessExtension_ schema. _TimeLag_ and _SequenceType_ made optional. _USERDEFINED_ added to the _IfcSequenceEnum_ enumeration. _UserDefinedSequenceType_ attribute added. WHERE rule controlling use of the _USERDEFINED_ enumeration added.
 
 **Use definitions**
 

@@ -4,4 +4,4 @@ _IfcThermalExpansionCoefficientMeasure_ is a measure of the thermal expansion co
 
 Type: REAL
 
-> HISTORY  New type in IFC2x2.
+> HISTORY New type in IFC2x2.

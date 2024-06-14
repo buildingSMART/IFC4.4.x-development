@@ -2,7 +2,7 @@
 
 An _IfcCircle_ is a curve consisting of a set of points having equal distance from the center.
 
-> NOTE  A circular arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_ being an _IfcCircle_.
+> NOTE A circular arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_ being an _IfcCircle_.
 
 Figure 1 illustrates the definition of _IfcCircle_ within a three-dimensional position coordinate system placed within the object coordinate system of an element.
 
@@ -37,7 +37,7 @@ The positive sense of the circle at any point is in the tangent direction, **T**
 
 $$ T = (-C_y,C_x,0) $$
 
-> HISTORY  New entity in IFC1.0
+> HISTORY New entity in IFC1.0
 
 ## Attributes
 

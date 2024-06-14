@@ -8,7 +8,7 @@ _IfcLightIntensityDistribution_ defines the the luminous intensity of a light so
 ## Attributes
 
 ### LightDistributionCurve
-Standardized  light distribution curve used to define the luminous intensity of the light in all directions.
+Standardized light distribution curve used to define the luminous intensity of the light in all directions.
 
 ### DistributionData
 Light distribution data applied to the light source. It is defined by a list of main plane angles (B or C according to the light distribution curve chosen) that includes (for each B or C angle) a second list of secondary plane angles (the &#946; or &#947; angles) and the according luminous intensity distribution measures.

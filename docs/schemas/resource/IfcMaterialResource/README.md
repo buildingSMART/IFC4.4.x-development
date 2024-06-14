@@ -3,7 +3,7 @@ IfcMaterialResource
 
 The schema _IfcMaterialResource_ contains the types and entities that are used to define materials (substances, of which products are made of). Materials are defined generically.
 
-> NOTE  The references to the usage of materials is made from the relevant elements through the objectified relationship _IfcRelAssociatesMaterial_.
+> NOTE The references to the usage of materials is made from the relevant elements through the objectified relationship _IfcRelAssociatesMaterial_.
 
 Material definitions are distinguished by how they apply to elements or element types and by their components (layers, profiles, parts).
 
@@ -28,10 +28,10 @@ The following material properties and information sets can be assigned to an _If
 * Material presentation in shape models (e.g. by color, hatching, rendering);
 * Relation to the ingredients of a material composite.
 
-> HISTORY  New schema in IFC1.0
+> HISTORY New schema in IFC1.0
 
 { .change-ifc2x4}
-> IFC4 CHANGE  Definition of material properties and their assignment to _IfcMaterial_ or other appropriate options in _IfcMaterialSelect_ is now fully captured by _IfcMaterialProperties_ using the general _IfcProperty_ approach. Specific predefined subtypes of _IfcMaterialProperties_ are no longer available.
+> IFC4 CHANGE Definition of material properties and their assignment to _IfcMaterial_ or other appropriate options in _IfcMaterialSelect_ is now fully captured by _IfcMaterialProperties_ using the general _IfcProperty_ approach. Specific predefined subtypes of _IfcMaterialProperties_ are no longer available.
 
 { .deprecated}
-> DEPRECATION  Material designation by using _IfcMaterialList_ is deprecated and should not be used. The classification of materials should not be done using _IfcMaterialClassificationRelationship_ anymore (entity type deprecated); the _IfcExternalReferenceRelationship_ in _IfcExternalReferenceResource_ schema should be used instead.
+> DEPRECATION Material designation by using _IfcMaterialList_ is deprecated and should not be used. The classification of materials should not be done using _IfcMaterialClassificationRelationship_ anymore (entity type deprecated); the _IfcExternalReferenceRelationship_ in _IfcExternalReferenceResource_ schema should be used instead.

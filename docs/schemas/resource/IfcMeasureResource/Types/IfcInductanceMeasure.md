@@ -6,4 +6,4 @@ Usually measure in Henry (H, Weber/A = V s/A).
 
 Type: REAL
 
-> HISTORY  New type in IFC2x.
+> HISTORY New type in IFC2x.

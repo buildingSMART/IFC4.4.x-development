@@ -21,7 +21,7 @@ Instances of type _IfcManifoldSolidBrep_ shall be of type _IfcFacetedBrep_, usin
 >
 
 
-> NOTE  Entity adapted from **manifold_solid_brep** defined in ISO 10303-42.
+> NOTE Entity adapted from **manifold_solid_brep** defined in ISO 10303-42.
 
 > HISTORY: New entity in IFC Release 1.0
 

@@ -2,7 +2,7 @@
 
 This enumeration is used to identify the primary purpose of a duct fitting. This is a very basic categorization mechanism to generically identify the duct fitting type. Subcategories of duct fittings are not enumerated.
 
-> HISTORY  New enumeration in IFC2x2.
+> HISTORY New enumeration in IFC2x2.
 
 ## Items
 

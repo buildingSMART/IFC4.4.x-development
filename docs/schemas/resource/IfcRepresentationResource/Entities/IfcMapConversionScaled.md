@@ -2,7 +2,7 @@
 
 An _IfcMapConversionScaled_ is a type of _IfcMapConversion_ that supplies factors for coordinate conversion. The usage is restricted to when factors are explicitly exchanged. 
 
-> NOTE  Typically, these are relatively smaller facilities such as buildings where constant factors are agreed on a project.
+> NOTE Typically, these are relatively smaller facilities such as buildings where constant factors are agreed on a project.
 
 > HISTORY New entity in IFC4X3_ADD1
 

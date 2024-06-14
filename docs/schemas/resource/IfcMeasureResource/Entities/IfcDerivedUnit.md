@@ -38,9 +38,9 @@ IfcMeasureWithUnit_1 -> IfcSIUnit_1 [headlabel="UnitComponent", labelangle=80, l
 Figure MPH &mdash; An example of how to assign miles per hour as a derived unit
 
 { .extDef}
-> REFERENCE  Definition according to ISO/CD 10303-41:1992 of `derived_unit`.
+> REFERENCE Definition according to ISO/CD 10303-41:1992 of `derived_unit`.
 
-> HISTORY  New entity in IFC1.5.1.
+> HISTORY New entity in IFC1.5.1.
 
 ## Attributes
 

@@ -17,16 +17,16 @@ Figure 1 &mdash; Type definition relationships
 
 The following table provides an example of assigning properties that can be overridden.
 
-Properties assigned to _IfcWallType_ | Property assigned to _IfcWall_  | Resulting property value for individual wall
+Properties assigned to _IfcWallType_ | Property assigned to _IfcWall_ | Resulting property value for individual wall
 --- | --- | ---
 - | ExtendToStructure = TRUE | ExtendToStructure = TRUE
 ThermalTransmittance = 0.375 | - | ThermalTransmittance = 0.375
 ExtendToStructure = TRUE | ExtendToStructure = FALSE | ExtendToStructure = FALSE
 
-> HISTORY  New entity in IFC2x.
+> HISTORY New entity in IFC2x.
 
 { .change-ifc2x4}
-> IFC4 CHANGE  The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByType_.
+> IFC4 CHANGE The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByType_.
 
 ## Attributes
 

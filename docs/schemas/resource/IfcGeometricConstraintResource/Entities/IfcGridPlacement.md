@@ -16,7 +16,7 @@ The direction of the y-axis of the _IfcGridPlacement_ is the orthogonal compleme
 
 The direction of the z-axis is the orientation of the cross product of the x-axis and the y-axis, i.e. the z-axis of the _IfcGridPlacement_ shall be co-linear to the z-axis of the local placement of the _IfcGrid_.
 
-> NOTE  The _PlacementLocation.OffsetDistances[3]_ and the _PlacementRefDirection.OffsetDistances[3]_ shall either not be assigned or should have the same z offset value.
+> NOTE The _PlacementLocation.OffsetDistances[3]_ and the _PlacementRefDirection.OffsetDistances[3]_ shall either not be assigned or should have the same z offset value.
 
 The following figures/ show the usage of placement location and direction for an _IfcGridPlacement_.
 

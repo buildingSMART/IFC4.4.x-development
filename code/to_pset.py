@@ -33,6 +33,14 @@ def format(s):
 def get_parent_of_pt(xmi_doc, enum_or_select_type):
     type_id = enum_or_select_type.id or enum_or_select_type.idref
     attrs = [x for x in xmi_doc.xmi.by_tag_and_type["ownedAttribute"]["uml:Property"] if x.name == "PredefinedType" and (x|"type").idref == type_id]
+
+    # We move the type objects last, because xmi_document would have already augmented the
+    # entity associations with a tuple of (typeobjectid, predefined type str), so here
+    # we should find the non-type object.
+    def is_typeobject_subtype(a):
+        return 'IfcTypeObject' in xmi_doc.supertypes(a.xml.parentNode.getAttribute('xmi:id'))
+    attrs.sort(key=is_typeobject_subtype)
+
     if attrs:
         return attrs[0].xml.parentNode.getAttribute("name")
     else:
@@ -56,7 +64,10 @@ def build_property_defs(xmi_doc, pset, node, by_name):
    
     # property definitions are contained in their own markdown file, but the pset markdown
     # can contain specific comment to augment the definition
-    pset_specific_comments = dict(mdp.markdown_attribute_parser(fn=pset.markdown_filename, heading_name="Comments"))
+    try:
+        pset_specific_comments = dict(mdp.markdown_attribute_parser(fn=pset.markdown_filename, heading_name="Comments"))
+    except FileNotFoundError as e:
+        pset_specific_comments = {}
     
     for _, (a_name, a_markdown), (nm, (ty_ty_arg)) in sorted(zip(orders, [(c.name, c.markdown) for c in pset.children], pset.definition)):
     

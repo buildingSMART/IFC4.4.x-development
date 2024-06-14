@@ -1,6 +1,14 @@
 {% extends "main.html" %}
 {% block pagecontent %}
-<h1>Annex D Diagrams - {{ name }}</h1>
 
-<img src="{{ name }}.png" />
+<h1>Annex D<br>
+<span style="font-weight:lighter">(informative)</span><br>
+<br>
+Diagrams</h1>
+
+<p>D.{{ number}} - {{ name }}</p>
+
+<section>
+    <img src="{{ name }}.png" />
+</section>
 {% endblock %}

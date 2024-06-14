@@ -12,13 +12,13 @@ QuadraticTerm =  -L/√2
 LinearTerm = L/4
 Constant = -1
 
-SegmentStart is the bearing angle at start and Segment length is the bearing angle at the end of the segment.
+_SegmentStart_ is the bearing angle at start and _SegmentLength_ is the bearing angle at the end of the segment.
 
 ```
 concept {
     IfcCurveSegment:ParentCurve -> IfcSecondOrderPolynomialSpiral
-    IfcCurveSegment:SegmentStart -> IfcParameterValue_0
-    IfcCurveSegment:SegmentLength -> IfcParameterValue_1
+    IfcCurveSegment:SegmentStart -> IfcLengthMeasure_0
+    IfcCurveSegment:SegmentLength -> IfcLengthMeasure_1
     IfcSecondOrderPolynomialSpiral:QuadraticTerm -> IfcLengthMeasure_0
     IfcSecondOrderPolynomialSpiral:LinearTerm -> IfcLengthMeasure_1
     IfcSecondOrderPolynomialSpiral:ConstantTerm -> IfcReal

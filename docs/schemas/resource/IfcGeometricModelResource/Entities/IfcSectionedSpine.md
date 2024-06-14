@@ -12,11 +12,15 @@ Figure 1 illustrates an example of an _IfcSectionedSpine_.
 * Each _CrossSectionPosition_ lies at a start or end point of the _Segments_.
 * Each _CrossSections_ are inserted by the _CrossSectionPositions_. The first two cross sections are of type _IfcRectangleProfileDef_, the third is of type _IfcDerivedProfileDef_.
 
-![spine 1](../../../../figures/ifcsectionedspine-layout1.gif "Figure 1 &mdash; Sectioned spine geometry")
+![spine 1](../../../../figures/ifcsectionedspine-layout1.gif)
+
+Figure 1 &mdash; Sectioned spine geometry
 
 Figure 2 illustrates the final result of the _IfcSectionedSpine_. The body (shown transparently) is not fully defined by the exchange definition.
 
-![render](../../../../figures/ifcsectionedspine.jpg "Figure 2 &mdash; Sectioned spine result")
+![render](../../../../figures/ifcsectionedspine.jpg)
+
+Figure 2 &mdash; Sectioned spine result
 
 { .extDef}
 > NOTE  Definition according to ISO/CD 10303-42:1992
@@ -28,8 +32,7 @@ Figure 2 illustrates the final result of the _IfcSectionedSpine_. The body (show
 
 > HISTORY  New entity in IFC2x.
 
-{ .spec-head}
-Informal Propositions:
+**Informal Propositions**
 
 1. none of the cross sections, after being placed by the cross section positions, shall intersect
 2. none of the cross sections, after being placed by the cross section positions, shall lie in the same plane

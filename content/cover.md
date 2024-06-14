@@ -8,9 +8,12 @@ This is **not** a formal release. Formal releases are available on [standards.bu
 
 <img src="https://raw.githubusercontent.com/buildingSMART/IFC4.4.x-development/master/docs/assets/img/Dongping.jpg" width="800">
 
+For those interested in contributing: this html is automatically generated from the latest published [XMI](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/schemas) (with the IFC schema) and [Markdown content](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/docs) (with the definitions and documentations).
+Us the 'edit on GitHub' button to suggest additional clarifications or typo fixes. Structural changes to the specification or semantic definitions are not allowed. Those are possible in the next version of IFC.
+
 ## Copyright
 
-Copyright © 1996-2022 buildingSMART International Limited. Some rights reserved. Any technical documentation made available by buildingSMART International Limited is the copyrighted work of buildingSMART International Limited and is owned by buildingSMART International Limited.
+Copyright © 1996-2024 buildingSMART International Limited. Some rights reserved. Any technical documentation made available by buildingSMART International Limited is the copyrighted work of buildingSMART International Limited and is owned by buildingSMART International Limited.
 The Industry Foundation Classes are published under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Read the [full license text here](https://creativecommons.org/licenses/by-nd/4.0/legalcode).
 For more information please refer to our [IP Policy](https://buildingsmart-1xbd3ajdayi.netdna-ssl.com/wp-content/uploads/2021/06/bSI-Intellectual-Property-Policy.pdf).
 
@@ -30,5 +33,5 @@ Parts of the IFC documentation contain material based on other international sta
 
 ### Correspondence Notice
 
-Prior written consent is required if you want to use IFC and/or the documentation in situations that are not covered by the CC BY-NC-ND 4.0 license.
+Prior written consent is required if you want to use IFC and/or the documentation in situations that are not covered by the CC BY-ND 4.0 license.
 Written requests should be addressed to: buildingSMART International Limited, Kings House, Station Road, Kings Langley, Hertfordshire, WD4 8LZ, UK. Email [contact@buildingsmart.org](mailto:contact@buildingsmart.org).

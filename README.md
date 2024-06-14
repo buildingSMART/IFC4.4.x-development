@@ -1,14 +1,10 @@
 IFC4.4.x
 ========
 
-Repository to collect updates to the IFC4.4 Specification. 
+Work in progress experiments to collect updates to the IFC4.4 Specification. This repository has no formal status in the standard production process.
+
 Every update will automatically be published here:
 - https://github.com/buildingsmart/ifc4.4.x-output (exp + pot + etc.)
-- formal releases can be found here https://github.com/buildingsmart/ifc4.4-html
 
-
-This is the official buildingSMART International repository for IFC 4.4.x and it will be the base for IFC 4.4.x.
-
-Place schemas for conversion in the `./schemas/` directory.
-
-(C) buildingSMART International Ltd. All rights reserved until formal release.
+(C) buildingSMART International Ltd. All rights reserved. 
+Formal (static) releases are published under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0).

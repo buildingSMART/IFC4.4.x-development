@@ -48,9 +48,10 @@ logging.basicConfig(level=logging.WARNING, stream=sys.stdout)
 
 # @todo schema name is hardcoded and not derived from the XMI package name for now
 is_iso = os.environ.get('ISO', '0') == '1'
+is_package = os.environ.get('PACKAGE', '0') == '1'
 
-if is_iso:
-    SCHEMA_NAME = "IFC4X3_ADD1"
+if is_package or is_iso:
+    SCHEMA_NAME = "IFC4X3_ADD2"
 else:
     SCHEMA_NAME = "IFC4X3_DEV"
 
@@ -304,6 +305,8 @@ class xmi_document:
         self.extract_associations()
         self.extract_associations(concepts=True)
         self.extract_order()
+        self.extract_guids()
+        self.extract_deprecated()
         
         self.should_translate_pset_types = True
                 
@@ -420,7 +423,13 @@ class xmi_document:
 
     def extract_order(self):
         self.order = {k: int(v) for k, v in self.xmi.tags["ExpressOrdering"].items()}
-    
+
+    def extract_guids(self):
+        self.guids = {k: v for k, v in self.xmi.tags["IFCDOC_GUID"].items()}
+
+    def extract_deprecated(self):
+        self.deprecated = [k for k, v in self.xmi.tags["deprecated"].items()]
+
     def __iter__(self):
         """
         A generator that yields tuples of <a, b> with
@@ -487,7 +496,7 @@ class xmi_document:
                         
                     # There are several kinds of pset and qset association mechanisms:
                     # 
-                    # - occurence driven: only applicable to IfcObject subtypes
+                    # - occurrence driven: only applicable to IfcObject subtypes
                     # - type driven: only applicable to IfcTypeObject subtypes
                     # - type driven override: applicable to both IfcObject and IfcTypeObject
                     #                         where the former can override the latter
@@ -543,8 +552,8 @@ class xmi_document:
                             refs = refs + corresponding_types
 
                 # TEMPORARY SKIP SOME OLD PSET DEFINITIONS
-                if (c|"project").author == 'IQSOFT':
-                    continue
+                # if (c|"project").author == 'IQSOFT':
+                #     continue
 
                 set_definition = []
                 for attr in self.xmi.by_id[c.idref]/"ownedAttribute":
@@ -857,10 +866,10 @@ class xmi_document:
                 attribute_dict = dict(attributes)
                 
                 itm_supertype_names = set(self.supertypes(c.idref))
-                is_occurence=itm_supertype_names & {"IfcElement", "IfcSystem", "IfcSpatialStructureElement"}
+                is_occurrence=itm_supertype_names & {"IfcElement", "IfcSystem", "IfcSpatialStructureElement"}
                 is_type = "IfcElementType" in itm_supertype_names
                 
-                if is_type or is_occurence:
+                if is_type or is_occurrence:
                     if "PredefinedType" in attribute_dict:
                         type_attr = attribute_dict["PredefinedType"]
                         type_name = type_attr.split(" ")[-1]
@@ -870,7 +879,7 @@ class xmi_document:
                         rule = clause_1 + "(PredefinedType <> %(type_name)s.USERDEFINED) OR\n ((PredefinedType = %(type_name)s.USERDEFINED) AND EXISTS (SELF\\%(attr)s))" % locals()
                         constraints_by_type["EXPRESS_WHERE"].append(("CorrectPredefinedType", rule))
 
-                if is_occurence:
+                if is_occurrence:
                     if c.name + "Type" in [x.name for x in self.xmi.by_tag_and_type["packagedElement"]["uml:Class"]]:
                         ty_def = [x for x in self.xmi.by_tag_and_type["packagedElement"]["uml:Class"] if x.name == c.name + "Type"][0]
                         ty_attr_names = [attr.name for attr in ty_def/"ownedAttribute"]

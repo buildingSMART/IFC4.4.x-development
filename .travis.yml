@@ -7,29 +7,33 @@ env:
   - secure: At7Z6HCLQdtkxJk6CvWafOxTHI2wHMk+8knSH9spDXYj3EhgwsncyjeSoKdHsQDV9uHyPIlUQ7Q0rniojHS5IwaPP5voe62UW5QoM86l4BUi9A8ccvItTj4CQ3ebj0ysNSbuPz4J9qBjqpScFH5PwISWvUKelAhSiUb4FIXdw3Ugi6JWsIo9y74aGMEjK+rtRrh8QkEHJSgS/zQu0hZMDrvVu+r7UOZbHTjxye+I/1Oqu0exIqXKvvCf/AetGe6XEBZv8UnsACEIx1zKT8qvgrp12F3DADvW7GtKB+6E3PVX79IHU9H7vk7WSQ+VMAQ3nio6XLzPyEir9SjNClkhFuNY2v27D+Q9RMd3vXewBS3AcjOqPjMmtWJQU30Yq/JrJoCU2O66Yk+F6Bo9j/cFTJOy6XEHkDLnChFyQTcg1b5+7CClCWmm2XPcvFb4dJMzISVSbhzS251H/Y3n4jc2JyAPWB+n6v2jYosD4zDclYE8s9scG3EpJ677tScPa4DuSAhrmALl/TOt2Nj8Qhl4m0U7a4WBd4QhbX8VF5DoKff7OE/7crjFwneKKP6YExCAgsylGQ9Nx9s1gd1zlgMd6bbPH+hNePT7RlCv1iDYVLEk8ZgB2saK7qz8ozEta33shgC9HlUKMUDqfYZpIQmkT6KXZZ4G2LbU0RhUqqaXPlE=
   - secure: Ni/w1iTS+sNJUtF6iDuYIYDFwo+J5kyJsaH2gQnjr7zBLvsKLsXBYtZbIl0xfu++rvTn8hZyvlsQDt1PidW7wLkc40p5nzpR3Pr6erGbbj5euRHSAL7/swW+Hjb35bsHEUmsu0Tgz3Zr7pMJZScZn6rJxsFgrglgbbdkCayVgM4h+KxQG2RHKs2HDW6XpNKuDF9HYeiZA8yiTFM+XcUvKjZ/gEoKg/3WzSNM06zEjrfSpzjygQm3yCSiMZbP1NsuuhdhC/RjwUDU1uehPpFHGGIVOHLcWrV4P5TZk3R8Es5bwaCH2HHc7x9KOK+c9xn9AhQwydB8uhf4awq0+uiB2N+RFxo531CclssyqyhU2lrktCkaTSQuewyc766lljJZKWiO8XCPZfZCin/NP+syepbMeg5UleY+DZa8KyoAAwpylwCph9cUE+YM4OHg0gfwir3rMfSe5id1zy0qFVxXX3h3ehNtg4ZuBeSj6VF9BiHlzR760lkMmb/zLMO5HzGDIgPWx9Aa4aCzE+Rna//3KAjgab97yMkAvkjoKOTlvbe7Ftalwxlipl3TGUzxpNd5HGI373I3VuSPfVACf1sgwFEIDqZZpo3dLRBiNb429R/EhV2IKujZXYd3YGeV8MyRfjuKkik4pSfo0YgRREY/lyqqH1PDhCFqxyva8yIm3bc=
 install:
-- sudo apt-get update -y && sudo apt-get install -y python3 python3-pip wget curl
-  unzip openjdk-11-jdk-headless
-- python3 -m pip install tabulate "pyparsing<3" lark-parser PyGithub Markdown markdown-it-py==1.1.0
-  deepdiff rdflib lxml Beautifulsoup4 networkx xmlschema
-- wget -O /tmp/ifopsh.zip https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-38-v0.6.0-721fe47-linux64.zip
-- mkdir -p `python3 -c 'import site; print(site.getusersitepackages())'`
-- unzip -d `python3 -c 'import site; print(site.getusersitepackages())'` /tmp/ifopsh.zip
-- "(cd / && curl --silent --show-error --retry 5 https://repo1.maven.org/maven2/org/topbraid/shacl/${SHACLVERSION}/shacl-${SHACLVERSION}-bin.zip
-  -o - | sudo jar x)"
-- sudo chmod +x /shacl-${SHACLVERSION}/bin/*
-- export PATH="/shacl-${SHACLVERSION}/bin:${PATH}"
+  - # sudo apt-get install texlive-full imagemagick
+  - # sudo rm /etc/ImageMagick-6/policy.xml
+  - # python3 -m pip install hilbertcurve
+  - pyenv global 3.8
+  - sudo apt-get update -y && sudo apt-get install -y wget curl unzip openjdk-11-jdk-headless
+  - python3 -m pip install tabulate "pyparsing<3" lark-parser PyGithub Markdown markdown-it-py==1.1.0 deepdiff rdflib lxml Beautifulsoup4 networkx xmlschema numpy nltk reversestem
+  - wget -O /tmp/ifopsh.zip https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-38-v0.7.0-476ab50-linux64.zip
+  - mkdir -p `python3 -c 'import site; print(site.getusersitepackages())'`
+  - unzip -d `python3 -c 'import site; print(site.getusersitepackages())'` /tmp/ifopsh.zip
+  - (cd / && curl --silent --show-error --retry 5 https://repo1.maven.org/maven2/org/topbraid/shacl/${SHACLVERSION}/shacl-${SHACLVERSION}-bin.zip -o - | sudo jar x)
+  - sudo chmod +x /shacl-${SHACLVERSION}/bin/*
+  - export PATH="/shacl-${SHACLVERSION}/bin:${PATH}"
 script:
 - python3 code/main.py
 - travis_wait python3 code/validate_schema_shacl.py
 after_success:
-- MESSAGE=$(git log --oneline -1)
-- git clone https://$USER_NAME:$USER_AUTH@github.com/buildingSMART/$REPO
-- cd $REPO
-- "[ $TRAVIS_PULL_REQUEST != false ] && git switch -c pr$TRAVIS_PULL_REQUEST"
-- "[ -d psd/ ] && rm -rf psd"
-- mv ../output/* .
-- git config user.email "${USER_EMAIL}"
-- git config user.name "${USER_NAME}"
-- git add .
-- git commit -m "${MESSAGE}"
-- git push
+  - |
+    if [ "$TRAVIS_BRANCH" == "master" ]; then
+      MESSAGE=$(git log --oneline -1)
+      git clone https://$USER_NAME:$USER_AUTH@github.com/buildingSMART/$REPO
+      cd $REPO
+      "[ $TRAVIS_PULL_REQUEST != false ] && git switch -c pr$TRAVIS_PULL_REQUEST"
+      "[ -d psd/ ] && rm -rf psd"
+      mv ../output/* .
+      git config user.email "${USER_EMAIL}"
+      git config user.name "${USER_NAME}"
+      git add .
+      git commit -m "${MESSAGE}"
+      git push
+    fi

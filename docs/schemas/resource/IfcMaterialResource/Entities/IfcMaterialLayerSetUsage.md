@@ -23,7 +23,9 @@ Figure 1 shows an example of the use of _IfcMaterialLayerSetUsage_ aligned to th
 
 > NOTE  According to the _IfcWall_ material use definition the _LayerSetDirection_ for _IfcWall_ is always AXIS2 (that is, along the y-axis), as shown in this example.
 
-![Mls usage](../../../../figures/ifcmateriallayersetusage_wall-01.png "Figure 1 &mdash; Material layer set usage for wall")
+![Mls usage](../../../../figures/ifcmateriallayersetusage_wall-01.png)
+
+Figure 1 &mdash; Material layer set usage for wall
 
 Figure 2 shows an example of the use of _IfcMaterialLayerSetUsage_ aligned to a slab.
 
@@ -31,7 +33,9 @@ Figure 2 shows an example of the use of _IfcMaterialLayerSetUsage_ aligned to a 
 
 > NOTE  According to the _IfcSlab_ material use definition the _LayerSetDirection_ for _IfcSlab_ is always AXIS3 (that is, along the z-axis).
 
-![Mls usage](../../../../figures/ifcmateriallayersetusage_slab-01.png "Figure 2 &mdash; Material layer set usage for slab")
+![Mls usage](../../../../figures/ifcmateriallayersetusage_slab-01.png)
+
+Figure 2 &mdash; Material layer set usage for slab
 
 Figure 3 shows an example of the use of _IfcMaterialLayerSetUsage_ aligned to a roof slab with non-perpendicular extrusion.
 
@@ -39,7 +43,9 @@ Figure 3 shows an example of the use of _IfcMaterialLayerSetUsage_ aligned to a 
 perpendicularly, even if the extrusion direction is not perpendicular. Therefore the total material layer thickness is
 not equal to the extrusion depth of the geometry.</small>
 
-![Mls usage](../../../../figures/ifcmateriallayersetusage_roofslab-01.png "Figure 3 &mdash; Material layer set usage for roof slab")
+![Mls usage](../../../../figures/ifcmateriallayersetusage_roofslab-01.png)
+
+Figure 3 &mdash; Material layer set usage for roof slab
 
 ## Attributes
 
@@ -62,11 +68,11 @@ Offset of the material layer set base line (MlsBase) from reference geometry (li
 > NOTE  the positive or negative sign in the offset only affects the MlsBase placement, it does not have any effect on the application of DirectionSense for orientation of the material layers; also DirectionSense does not change the MlsBase placement.
 
 ### ReferenceExtent
-Extent of the extrusion of the elements body shape representation to which the _IfcMaterialLayerSetUsage_ applies. It is used as the reference value for the upper _OffsetValues[2]_ provided by the _IfcMaterialLayerSetWithOffsets_ subtype for included material layers.
+Extent of the extrusion of the elements body shape representation to which the _IfcMaterialLayerSetUsage_ applies. It is used as the reference value for the upper _OffsetValues[2]_ provided by the _IfcMaterialLayerWithOffsets_ subtype for included material layers.
 
 { .change-ifc2x4}
 > IFC4 CHANGE  New attribute added to the end of attribute list.
 
-> NOTE  The attribute _ReferenceExtent_ shall be asserted, if an _IfcMaterialLayerSetWithOffsets_ is included in the _ForLayerSet.MaterialLayers_ list of material layers.
+> NOTE  The attribute _ReferenceExtent_ shall be asserted, if an _IfcMaterialLayerWithOffsets_ is included in the _ForLayerSet.MaterialLayers_ list of material layers.
 
 > NOTE  The _ReferenceExtent_ for _IfcWall_ is the reference height starting at z=0 being the XY plane of the object coordinate system.

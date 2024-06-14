@@ -46,15 +46,14 @@ from md import markdown_attribute_parser
 import logging
 logging.basicConfig(level=logging.WARNING, stream=sys.stdout)
 
+from version import schema_version_string
+
 # @todo schema name is hardcoded and not derived from the XMI package name for now
 is_iso = os.environ.get('ISO', '0') == '1'
 is_package = os.environ.get('PACKAGE', '0') == '1'
 
-if is_package or is_iso:
-    SCHEMA_NAME = "IFC4X3_ADD2"
-else:
-    SCHEMA_NAME = "IFC4X3_DEV"
-
+SCHEMA_NAME = schema_version_string
+if not (is_package or is_iso):
     try:
         if os.environ.get("REPO_DIR"):
             repo_dir = "-C", os.environ.get("REPO_DIR")
@@ -694,13 +693,12 @@ class xmi_document:
                         assert nm
                     except:
                         continue
-                        
+
                     try:
                         attr_name = other_end.name
                     except:
                         attr_name = None
                     
-
                     is_inverse = bool(self.xmi.tags['ExpressInverse'].get(end_node.id))
                     if is_inverse:
                         inverse_order = int(self.xmi.tags['ExpressOrderingInverse'].get(end_node.id, 1e6))
@@ -723,7 +721,7 @@ class xmi_document:
                     if end_node/"lowerValue" and not express_aggr:
                         is_optional |= (end_node|"lowerValue").value == '0'
                         
-                    bound = "[0:1]" if is_inverse else "[0:?]"
+                    bound = ("[0:1]" if express_aggr else None) if is_inverse else "[0:?]"
                     try:
                         lv = int((end_node|"lowerValue").value)
                         uv_s = (end_node|"upperValue").value
@@ -745,7 +743,7 @@ class xmi_document:
 
                     express_aggr_unique = "UNIQUE " if is_unique else ""
                     
-                    if express_aggr:
+                    if express_aggr and bound is not None:
                         attr_entity = "%s %s OF %s%s" % (express_aggr, bound, express_aggr_unique, attr_entity)
                         
                     if express_definition:
@@ -800,9 +798,11 @@ class xmi_document:
                             uv_s = (a|"upperValue").value
                             if uv_s == "*":
                                 uv = "?"
-                            else:
+                            elif uv_s.isnumeric() or uv_s == "-1":
                                 uv = int(uv_s)
                                 if uv == -1: uv = "?"
+                            else:
+                                uv = uv_s
                             bound = "[%s:%s]" % (lv, uv)
                         except: continue
                     # or use order[iref]?

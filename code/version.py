@@ -2,7 +2,7 @@ import os
 import json
 import subprocess
 
-version_tuple = json.load(open('version.json'))
+version_tuple = json.load(open(os.path.join(os.path.dirname(__file__), 'version.json')))
 prefixes = ('IFC', 'X', '_ADD', '_TC')
 schema_version_string = ''.join(''.join(map(str, t)) if t[1] and isinstance(t[1], int) else '' for t in zip(prefixes, version_tuple))
 spec_version_string = f'IFC {".".join(map(str, version_tuple))}'

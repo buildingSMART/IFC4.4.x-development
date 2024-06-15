@@ -79,8 +79,8 @@ for ffn in glob.glob(relative_path("..", "schemas", "*.xml")):
     # subprocess.check_call([sys.executable, relative_path("sanity_checker.py"), ffn])
 
     subprocess.check_call([sys.executable, relative_path("parse_xmi.py"), ffn], cwd=relative_path('.'))
-    subprocess.check_call([sys.executable, relative_path("extract_concepts_from_xmi.py"), ffn], cwd=relative_path('.'))
+    subprocess.call([sys.executable, relative_path("extract_concepts_from_xmi.py"), ffn], cwd=relative_path('.'))
     
-    subprocess.check_call([sys.executable, relative_path("templates_to_mvdxml.py"), relative_path("..", "output", "IFC4.4.mvdxml")], cwd=relative_path('.'))
+    subprocess.call([sys.executable, relative_path("templates_to_mvdxml.py"), relative_path("..", "output", "IFC4.4.mvdxml")], cwd=relative_path('.'))
 
 subprocess.check_call([sys.executable, relative_path("generate_pset_templates.py"), relative_path("..", "output", "Pset_IFC4X4.ifc")], cwd=relative_path('.'))

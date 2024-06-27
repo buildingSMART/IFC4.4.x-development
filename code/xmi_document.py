@@ -866,7 +866,7 @@ class xmi_document:
                 attribute_dict = dict(attributes)
                 
                 itm_supertype_names = set(self.supertypes(c.idref))
-                is_occurrence=itm_supertype_names & {"IfcElement", "IfcSystem", "IfcSpatialStructureElement"}
+                is_occurrence=itm_supertype_names & {"IfcElement", "IfcSystem", "IfcSpatialStructureElement", "IfcObservation", "IfcLinearZone"}
                 is_type = "IfcElementType" in itm_supertype_names
                 
                 if is_type or is_occurrence:

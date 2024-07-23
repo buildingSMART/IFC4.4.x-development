@@ -377,7 +377,8 @@ if __name__ == "__main__":
             names += [
                 # no IfcDoc branch for 4x1
                 "ifc41", "IFC4x1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4x1",
-                "ifc42", "IFC4x2.exp", "deprecated_entities_Ifc4.2.0.1.json", "psd_IFC4x2"
+                "ifc42", "IFC4x2.exp", "deprecated_entities_Ifc4.2.0.1.json", "psd_IFC4x2",
+                "ifc43", "IFC4X3_ADD2.exp", "deprecated_entities_Ifc4.3.2.0.json", "psd_IFC4.3.2.0"
             ]
             
         files = list(map(functools.partial(os.path.join, d), names))

@@ -76,7 +76,10 @@ class markdown_attribute_parser:
     def __init__(self, *, fn=None, data=None, as_text=True, heading_name="Attributes", short=False, linesep=""):
     
         self.heading_name = heading_name
-        self.root = parse_document(fn=fn, data=data, as_text=as_text, linesep=linesep)
+        try:
+            self.root = parse_document(fn=fn, data=data, as_text=as_text, linesep=linesep)
+        except:
+            self.root = markdown_section(1, "Empty", "Empty", "Empty")
         self.children = {}
         self.status = {}
         self.short = short

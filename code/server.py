@@ -773,8 +773,11 @@ class resource_documentation_builder:
 
     @property
     def markdown(self):
-        with open(self.md, "r", encoding="utf-8") as f:
-            return re.sub(DOC_ANNOTATION_PATTERN, "", "\n".join(f.readlines()[2:]))
+        try:
+            with open(self.md, "r", encoding="utf-8") as f:
+                return re.sub(DOC_ANNOTATION_PATTERN, "", "\n".join(f.readlines()[2:]))
+        except FileNotFoundError:
+            return ""
 
     def get_markdown_content(self, heading):
         attrs = []
@@ -2244,8 +2247,8 @@ def schema(name):
     SectionNumberGenerator.begin_subsection()
 
     definition = None
+    definition_number = SectionNumberGenerator.generate()
     if os.path.exists(fn):
-        definition_number = SectionNumberGenerator.generate()
         definition = process_markdown("", open(fn).read())
 
     order = ["Types", "Entities", "Property Sets", "Quantity Sets", "Functions", "Rules", "PropertyEnumerations"]
